@@ -28,7 +28,6 @@ case "$1" in
   start)
     echo "Starting webserver"
     # run application you want to start
-    #/usr/local/bin/noip2
     /home/pi/py_web/webserver.py
     ;;
   stop)
@@ -37,7 +36,7 @@ case "$1" in
     killall webserver.py
     ;;
   *)
-    echo "Usage: /etc/init.d/noip {start|stop}"
+    echo "Usage: /etc/init.d/webserver {start|stop}"
     exit 1
     ;;
 esac
