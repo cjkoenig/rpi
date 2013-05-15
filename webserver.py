@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # Inspired by http://fragments.turtlemeat.com/pythonwebserver.php
 
 # Required libraries:
@@ -24,11 +25,11 @@ class RequestHandler(BaseHTTPRequestHandler):
     #Configure your system here
     #==========================
     #DNS name or IP of your rpi:
-    hostname = "rpi.fritz.box"
+    hostname = "rpi1.fritz.box"
     #first five dip switches (same for all sockets):
     systemcode = '11111'
     #individual id of each socket:
-    socket_ids = {'A': 11, 'B': 12, 'C': 13, 'D': 14}; 
+    socket_ids = {'A': 1, 'B': 2, 'C': 3, 'D': 4}; 
     
     #answer to _every_ request, usually no configuration required
     html_answer = '<html><head><title>Power socket control</title></head>\
